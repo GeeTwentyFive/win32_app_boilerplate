@@ -16,6 +16,18 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
 
 
+                case WM_PAINT:
+                        PAINTSTRUCT ps;
+                        HDC hdc = BeginPaint(hwnd, &ps);
+
+                        FillRect(hdc, &ps.rcPaint, (HBRUSH) COLOR_WINDOW);
+
+                        EndPaint(hwnd, &ps);
+
+                        return 0;
+
+
+
                 // TODO
 
         }
