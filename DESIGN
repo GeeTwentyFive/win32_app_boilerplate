@@ -1,0 +1,5 @@
+main.c - init & window procedure
+
+window.h - window creation & message loop
+
+error.h - error handling
